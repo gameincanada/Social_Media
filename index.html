@@ -129,7 +129,7 @@ p{
   background-color: pink;
 }
 .button7 {
-  background-color: #038BFF;
+  background-color: #808080;
   border: none;
   color: white;
   padding: 15px 25px;
@@ -139,6 +139,15 @@ p{
 }
 .button7:hover {
   background-color: pink;
+}
+.button8 {
+    background-image: url(https://github.com/gameincanada/Social_Media/blob/master/assets/nebula2.png?raw=true); background-color:Transparent;" />
+  border: 1px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .button1 {border-radius: 8px;
@@ -154,6 +163,8 @@ p{
 .button6 {border-radius: 8px;
 }
 .button7 {border-radius: 8px;
+}
+.button8 {border-radius: 8px;
 }
 .auto-style3 {
 	text-align: center;
@@ -186,9 +197,22 @@ Twitter</button>
 <p class="auto-style1">
 <button class="button2" onclick="location.href='https://instagram.com/gameincanada';"style="width: 335px">
 Instagram</button></p>
+<p>
 <p class="auto-style1">
-<button class="button7" onclick="location.href='maps.html';"style="width: 335px">
-Fortnite Map Codes</button></p>
-</p>
+<img alt="" height="200" src="https://github.com/gameincanada/Social_Media/blob/master/assets/Teleporter.png?raw=true" width="200"></p>
+<h1 class="auto-style3">Click a Map Button to Copy the Code</h1>
+<p class="auto-style4">
+<input type="text" value="2117-1691-6702" id="myInput">
+<button class="button8" onclick="myFunction()">Nebula Box Fight Arena</button></p>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the Map Code: " + copyText.value);
+}
+
+</script>
 </body>
 </html>
